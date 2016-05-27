@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>snake eat egg</title>
+    <link href="snake.css" rel="stylesheet">
+</head>
+<body>
+<!--<p id="testDiv" style="font-size: 40px">123<p>-->
+<div id="gameBox">
+    <div id="gamePlay">
+        <div class="snakenode"></div>
+
+    </div>
+    <div id="gameBSO">
+        <div id="gameB"><!--准备开始游戏起始页-->
+            <div id="gameSTABt" class="btn">开始游戏</div>
+            <div id="degreeSelect">
+                <span>易</span>
+                <ul id="degreeSelectUl">
+                    <li class="d1 degree-select select"></li>
+                    <li class="d2 degree-select select"></li>
+                    <li class="d3 degree-select select"></li>
+                    <li class="d4 degree-select"></li>
+                    <li class="d5 degree-select"></li>
+                </ul>
+                <span>难</span>
+            </div>
+            <div class="wrap" style="width:198px">
+                <input type="checkbox" id="double" class="chk_2" /><label for="double">双人模式</label>
+            </div>
+            <div id="gameBTip">
+                <p>提示：按方向键控制蛇，若开启双人模式，附加[W][A][S][D]控制小蛇<br/>游戏中按【空格】键暂停</p>
+            </div>
+        </div> <!--gameB-->
+        <div id="gameSO"><!--暂停游戏和gameOver页-->
+            <div class="gameSO-top-tip">
+                <p id="gameSOTopTipOne"></p>
+                <p id="gameSOTopTipTwo"></p>
+            </div>
+            <div id="gameSOSTABt" class="btn">重新开始</div>
+            <div id="gameSOBBt" class="btn">结束游戏</div>
+        </div><!--gameSO-->
+    </div>
+    <div id="gameBB">
+        <p id="gameBBText">按方向键开始游戏</p>
+    </div>
+    <div id="scoreDiv">
+        <p id="scoreText">score:</p>
+    </div>
+    <div id="author">
+        <p id="authorText">@kroket</p>
+    </div>
+</div>
+
+<script rel="script" src="snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+body,div,p{
+    margin:0;
+    padding:0;
+}
+#gameBox{
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #cecece;
+    background-color: #ffcccc;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#gamePlay{
+    width: 800px;
+    height: 500px;
+    /*border: 1px solid black;*/
+    position:absolute;
+    overflow: hidden;
+}
+#gameBSO{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top:-65%;
+    background-color: rgba(255,248,214,0.5);
+    /*border: 1px solid red;*/
+}
+/*开始游戏框*/
+#gameB,#gameSO{
+    /*border: 1px solid red;*/
+    width: 70%;
+    height: 88.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(255,248,214,0.8);
+}
+.btn{
+    margin:30px auto 30px auto;
+    padding: 10px;
+    line-height:40px;
+    border:5px solid #97ad0e;
+    background-color: lightgoldenrodyellow;
+    text-align:center;
+    color: #97ad0e;
+    font-size:30px;
+    font-weight: bolder;
+    border-radius:25px
+}
+.btn:hover{
+    background-color: #97ad0e;
+    color: beige;
+    cursor: pointer;
+}
+#gameSBt{
+    width: 70%;
+}
+/*难度选择条*/
+#degreeSelect{
+    /*border: 1px solid blue;*/
+    margin: 30px auto 5px auto;
+    padding: 8px 15px 5px 15px;
+    width:56%;
+    height: 15%;
+}
+#degreeSelect span,#degreeSelect ul li{
+    float: left;
+}
+#degreeSelect span{
+    color: cadetblue;
+    font-size:30px;
+    font-weight: bolder;
+    margin: 0 8px 0 8px;
+}
+#degreeSelect ul{
+    margin: 0px;
+    padding:0;
+    display: inline;
+}
+.degree-select{
+    border: 2px solid #97ad0e;
+    width: 25px;
+    height: 25px;
+    list-style-type: none;
+    margin: 3px 6px 0 6px;
+}
+.select{
+    background-color: yellow;
+}
+/*gameBTip提示条*/
+#gameBTip{
+    text-align:center;
+    color: #97ad0e;
+    margin: 5px auto 5px auto;
+    width:55%;
+}
+/*gameSO*/
+#gameSO{
+    display: none;
+}
+#gameSO #gameSOSTABt,#gameSO #gameSOBBt{
+    float: left;
+    margin:10px 50px 10px 50px;
+    padding: 5px 10px 5px 10px;
+    width: 150px;
+    line-height:40px;
+    text-align:center;
+}
+.gameSO-top-tip{
+    margin:20px auto 5px auto;
+    padding: 10px;
+    line-height:40px;
+    text-align:center;
+    color: #97ad0e;
+}
+.gameSO-top-tip p{
+    margin: 0;
+    padding: 0;
+}
+#gameSOTopTipOne{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#gameSOTopTipTwo{
+    font-size: 20px;
+}
+/*按方向键开始游戏提示*/
+#gameBB{
+    /*position: absolute;*/
+    margin-top: 50%;
+    padding: 10px;
+    line-height:40px;
+    height: 40px;
+    text-align:center;
+    color: blue;
+}
+/*分数*/
+
+#scoreDiv{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+}
+#scoreText{
+    /*position: absolute;*/
+    font-size: 25px;
+    font-weight: bolder;
+}
+/*author**/
+#author{
+    position: absolute;
+    bottom: -10%;
+    padding: 0px;
+    line-height:50px;
+    height: 10%;
+    text-align:center;
+    color: cornflowerblue;
+    margin-left: 40%;
+}
+#authorText{
+    font-size: 30px;
+    font-weight: bolder;
+}
+/*蛇样式*/
+.snakenode{
+    position: absolute;
+}
+.egg{
+    position: absolute;
+}
+/*双人模式选项*/
+.wrap{
+    padding: 5px 190px;
+}
+.chk_2{
+    display: none;
+}
+.chk_2 + label {
+    width: 113px;
+    background-color: rgb(255,220,200);
+    padding: 5px 10px 5px 50px;
+    border-radius: 1000px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid  #97ad0e;
+    color: #97ad0e;
+    font-size: 1.7em;
+
+}
+.chk_2 + label:hover  {
+    background: lightgoldenrodyellow;
+}
+.chk_2 + label:active  {
+    background:  lightgoldenrodyellow;
+}
+.chk_2 + label:before {
+    content: ' ';
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left:13px;
+    z-index: 999;
+    box-shadow: inset 0px 0px 40px  #97ad0e;
+    display: none;
+}
+.chk_2:checked + label:before {
+    display: block;
+}
